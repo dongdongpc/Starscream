@@ -27,7 +27,9 @@ let package = Package(
         products: [
             .library(name: "Starscream", targets: ["Starscream"])
         ],
-        dependencies: [],
+        dependencies: [
+            .Package(url: "https://github.com/daltoniam/Starscream.git", majorVersion: 4)
+        ],
         targets: [
             .target(name: "Starscream",
                     path: "Sources")
